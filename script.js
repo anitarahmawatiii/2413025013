@@ -83,7 +83,16 @@ const cardItems = [
     desc1: "Algoritma Bresenham dan Algoritma Midpoint digunakan untuk menggambar lingkaran dengan efisien. Kedua metode ini bekerja dengan menentukan titik-titik yang membentuk lingkaran tanpa perlu perhitungan yang kompleks.",
     link3: " https://youtu.be/IkOsiYkpA-0?si=vTrDDft7H5JbDkTb",
     docLink4: "https://drive.google.com/file/d/1wjiavdV-RIVc1ATQikbr-8mDHcSILY0Y/view?usp=sharing"
+  },
+  {
+    img1: "img/projek4.png",
+    title1: "Algoritma Pembentukan Kurva",
+    miniTitle: "Pohon & Awan",
+    desc1: "Algoritma pembentukan kurva Bézier merupakan proses perhitungan matematis yang digunakan untuk membentuk lengkungan halus berdasarkan sejumlah titik kontrol.",
+    link4: "https://youtu.be/iVStKC-wlH8?si=QyjnCgn8byLdBx2j", 
+    docLink5: "https://drive.google.com/file/d/12Ksb8dcXzcfXdqFvAYb12vQxuZBOIOmy/view?usp=sharing"  
   }
+  
 ];
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -129,6 +138,13 @@ function displayCards(cardItems) {
             </button>
           ` : ''}
 
+          ${item.link4 ? `
+            <button class="hover:bg-transparent hover:border hover:border-white bg-pink-700 px-5 py-2 font-custom rounded-lg">
+              <a href="${item.link4}" target="_blank">Video</a>
+            </button>
+          ` : ''}
+          
+
           <!-- Tombol Dokumen -->
           ${item.docLink1 ? `
             <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
@@ -151,6 +167,12 @@ function displayCards(cardItems) {
           ${item.docLink4 ? `
             <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
               <a href="${item.docLink4}" target="_blank">PDF</a>
+            </button>
+          ` : ''}
+
+          ${item.docLink5 ? `
+            <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
+              <a href="${item.docLink5}" target="_blank">PDF</a>
             </button>
           ` : ''}
 
