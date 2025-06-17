@@ -85,14 +85,38 @@ const cardItems = [
     docLink4: "https://drive.google.com/file/d/1wjiavdV-RIVc1ATQikbr-8mDHcSILY0Y/view?usp=sharing"
   },
   {
-    img1: "img/projek4.png",
-    title1: "Algoritma Pembentukan Kurva",
-    miniTitle: "Pohon & Awan",
-    desc1: "Algoritma pembentukan kurva Bézier merupakan proses perhitungan matematis yang digunakan untuk membentuk lengkungan halus berdasarkan sejumlah titik kontrol.",
-    link4: "https://youtu.be/iVStKC-wlH8?si=QyjnCgn8byLdBx2j", 
-    docLink5: "https://drive.google.com/file/d/12Ksb8dcXzcfXdqFvAYb12vQxuZBOIOmy/view?usp=sharing"  
+    img1: "img/projek5.png",
+    title1: "Kuis 1 Persamaan Misteri",
+    miniTitle: "Heart Curve",
+    desc1: "Persamaan ini adalah bentuk implisit dan dikenal sebagai persamaan hati (heart curve) dalam bentuk 2D. Ketika diplot, akan membentuk simbol hati  yang simetris terhadap sumbu y.",
+    docLink6: "https://drive.google.com/file/d/1O74-Uaa56ZQsW1Mtj67Cpygn22Cf1SDk/view?usp=sharing"  
+  },
+  {
+    img1: "img/projek6.png",
+    title1: "Kuis 2 Transformasi 2D",
+    miniTitle: "Matriks Transformasi",
+    desc1: "Matriks transformasi merupakan sebuah metode matematis yang berfungsi untuk mengubah atau memodifikasi objek terutama pada bidang dua dimensi (2D).",
+    link5: "https://youtu.be/sHfTpxYEnkw?si=LNNLluSK7MbnkMkw", 
+    docLink7: "https://drive.google.com/file/d/1Rw5CrnctLUkrfOLAIRLLJPttXkvGz-sr/view?usp=sharing", 
+    spreadsheetLink1: "https://docs.google.com/spreadsheets/d/1YeUE4sgT7CuKHyZ6ld1xal_Yjl4QNndn0-sSTIQrKKM/edit?usp=sharing"  
+  },
+  {
+    img1: "img/projek7.png",
+    title1: "Kuis 3 Clipping Algorithm",
+    miniTitle: "Cohen Clip",
+    desc1: "Algoritma Cohen-Sutherland adalah metode yang digunakan untuk menentukan bagian dari suatu garis yang berada di dalam jendela tampilan (window) dengan cara memotong (clipping) bagian garis yang berada di luar batas jendela tersebut. ",
+    link6: "https://youtu.be/8D1tAiUSQQc?si=zfm1Aeg1OR7QlGNn", 
+    docLink8: "https://drive.google.com/file/d/1tkpgwQonWQUQvgT3_ZCcBib7U7X1ud5f/view?usp=sharing", 
+    spreadsheetLink2: "https://docs.google.com/spreadsheets/d/1K_WJ_LBhqxPwl2Goo4cLclRZEpdRIJrT8jZ_MBsL5XY/edit?usp=sharing"  
+  },
+  {
+    img1: "img/projek8.png",
+    title1: "Kuis 4 Clipping Algoritma Pemotongan Garis",
+    miniTitle: "Polygon Clip",
+    desc1: "Polygon clipping adalah proses dalam grafika komputer yang digunakan untuk memotong bagian dari sebuah poligon yang berada di luar area tampilan (viewport) atau jendela tampilan.",
+    link7: "https://youtu.be/EaN5GdqBerA?si=RnuPE5fc5rT5E-Dx", 
+    docLink9: "https://drive.google.com/file/d/1xvsL8WR_nYXnYf8lsMUy-rEp8q7hC0h9/view?usp=sharing", 
   }
-  
 ];
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -143,7 +167,24 @@ function displayCards(cardItems) {
               <a href="${item.link4}" target="_blank">Video</a>
             </button>
           ` : ''}
-          
+
+           ${item.link5 ? `
+            <button class="hover:bg-transparent hover:border hover:border-white bg-pink-700 px-5 py-2 font-custom rounded-lg">
+              <a href="${item.link5}" target="_blank">Video</a>
+            </button>
+          ` : ''}
+
+          ${item.link6 ? `
+            <button class="hover:bg-transparent hover:border hover:border-white bg-pink-700 px-5 py-2 font-custom rounded-lg">
+              <a href="${item.link6}" target="_blank">Video</a>
+            </button>
+          ` : ''}
+
+          ${item.link7 ? `
+            <button class="hover:bg-transparent hover:border hover:border-white bg-pink-700 px-5 py-2 font-custom rounded-lg">
+              <a href="${item.link7}" target="_blank">Video</a>
+            </button>
+          ` : ''}
 
           <!-- Tombol Dokumen -->
           ${item.docLink1 ? `
@@ -170,11 +211,49 @@ function displayCards(cardItems) {
             </button>
           ` : ''}
 
-          ${item.docLink5 ? `
+           ${item.docLink5 ? `
             <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
               <a href="${item.docLink5}" target="_blank">PDF</a>
             </button>
           ` : ''}
+
+          ${item.docLink6 ? `
+          <button class="hover:bg-transparent hover:border hover:border-white bg-pink-700 px-5 py-2 font-custom rounded-lg">
+              <a href="${item.docLink6}" target="_blank">PDF</a>
+            </button>
+          ` : ''}
+
+          ${item.docLink7 ? `
+            <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
+              <a href="${item.docLink7}" target="_blank">PDF</a>
+            </button>
+          ` : ''}
+
+          ${item.docLink8 ? `
+            <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
+              <a href="${item.docLink8}" target="_blank">PDF</a>
+            </button>
+          ` : ''}
+
+          ${item.docLink9 ? `
+            <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
+              <a href="${item.docLink9}" target="_blank">PDF</a>
+            </button>
+          ` : ''}
+
+          <!-- Tombol Spreadsheets -->
+          ${item.spreadsheetLink1 ? `
+          <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
+            <a href="${item.spreadsheetLink1}" target="_blank">Spreadsheets</a>
+          </button>
+          ` : ''}
+
+          ${item.spreadsheetLink2 ? `
+          <button class="border hover:bg-pink-700 hover:border-0 border-pink-200 px-5 py-2 ml-2 font-custom rounded-lg">
+            <a href="${item.spreadsheetLink2}" target="_blank">Spreadsheets</a>
+          </button>
+          ` : ''}
+
 
         </div>
       </div>
