@@ -85,6 +85,14 @@ const cardItems = [
     docLink4: "https://drive.google.com/file/d/1wjiavdV-RIVc1ATQikbr-8mDHcSILY0Y/view?usp=sharing"
   },
   {
+    img1: "img/projek4.png",
+    title1: "Algoritma Pembentukan Kurva",
+    miniTitle: "Pohon & Awan",
+    desc1: "Algoritma pembentukan kurva Bézier merupakan proses perhitungan matematis yang digunakan untuk membentuk lengkungan halus berdasarkan sejumlah titik kontrol.",
+    link4: "https://youtu.be/iVStKC-wlH8?si=QyjnCgn8byLdBx2j", 
+    docLink5: "https://drive.google.com/file/d/12Ksb8dcXzcfXdqFvAYb12vQxuZBOIOmy/view?usp=sharing"  
+  },
+  {
     img1: "img/projek5.png",
     title1: "Kuis 1 Persamaan Misteri",
     miniTitle: "Heart Curve",
